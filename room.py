@@ -12,7 +12,7 @@ class Room:
         self.x = x
         self.y = y
     def __str__(self):
-        return f"\n-------------------\n\n{self.name}\n\n   {self.description}\n\n{self.get_exits_string()}\n"
+        return f"-------------------\n{self.name}   {self.description}\n{self.get_exits_string()}"
     def print_room_description(self, player):
         print(str(self))
     def get_exits(self):
